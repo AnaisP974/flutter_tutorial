@@ -17,13 +17,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: ElevatedButton(
           onPressed: () {
             // Faire une redirection
-            Navigator.push(
+            Navigator.pushNamed(
               context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return const SettingPage();
-                },
-              ),
+              '/settings'
             );
           },
           child: const Text("Setting page"),
